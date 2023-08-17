@@ -1,0 +1,52 @@
+.spons{
+    padding:20px 0px;
+    margin:0px auto;
+    /* width:90%; */
+    
+    background-color: skyblue;
+
+}
+
+
+.title{
+    margin-bottom: 5vh;
+}
+h1{
+    text-align: center;
+}
+
+
+.list{
+    display:flex;
+    flex-wrap: wrap;
+    padding:0px 5vw;
+}
+    
+
+
+li{
+    list-style: none;
+    width:25%;
+    padding: 0px auto;
+    margin:5px 0px;   
+
+}
+
+img{
+    width:90px;
+    height:90px;
+    display:block;
+    margin:0px auto;
+}
+    
+a{
+    display: block;
+    width:90px;
+    height:90px;
+    margin:0px auto;
+
+
+
+}
+
+

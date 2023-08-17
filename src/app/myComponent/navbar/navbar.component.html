@@ -1,0 +1,46 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-dark my-navbar ">
+    <a class="navbar-brand" href="/"><img src="../../assets/images/lion (1).png" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation" (click)="isCollapsed = !isCollapsed">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    
+  
+    <div class="collapse navbar-collapse" id="navbarColor03" [ngbCollapse]="isCollapsed">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#avenues">Our Sporting Avenues</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/gallery">Gallery</a>
+        </li>
+        
+        <li ngbDropdown class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" ngbDropdownToggle>
+            Events
+          </a>
+          <ul ngbDropdownMenu class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li ngbDropdownItem><a class="dropdown-item" href="/">Summer Camp 2023</a></li>
+            <li ngbDropdownItem><a class="dropdown-item" href="/">Lions Premier League</a></li>
+            <li ngbDropdownItem><hr class="dropdown-divider"></li>
+            <li ngbDropdownItem><a class="dropdown-item" href="/">Lions Marathon 2023</a></li>
+          </ul>
+        </li>
+        
+      </ul>
+     
+    </div>
+
+
+    <button type="button" class=" log btn btn-danger" (click)="navigatetoGetMembership()">Get Membership</button>
+
+</nav>
+
+
+<!-- <app-carousel></app-carousel> -->
+
+
+
+

@@ -1,0 +1,43 @@
+<body>
+  <section class="container">
+    <header>Registration Form</header>
+    <form action="#" class="form">
+      <div class="input-box">
+        <label>Full Name</label>
+        <input type="text" [(ngModel)]="name" [ngModelOptions]="{standalone: true}" placeholder="Enter full name" required />
+      </div>
+      <div class="input-box">
+        <label>Email Address</label>
+        <input type="text" [(ngModel)]="email" [ngModelOptions]="{standalone: true}" placeholder="Enter email address" required />
+      </div>
+      <div class="column">
+        <div class="input-box">
+          <label class="ss">Select Sport</label>
+          <div  class="select-box">
+            <select [(ngModel)]="sport" [ngModelOptions]="{standalone: true}" placeholder="Select Sport">
+              <option hidden>Sports</option>
+              <option>Cricket</option>
+              <option>Football</option>
+              <option>Kabaddi</option>
+              <option>Gym</option>
+              <option>Swimming</option>
+              <option>Basketball</option>
+              <option>Badminton</option>
+              <option>Tennis</option>
+            </select>
+          </div>
+        </div>
+        <div class="input-box">
+          <label>No. of Months</label>
+          <input type="number" [(ngModel)]="duration" [ngModelOptions]="{standalone: true}" placeholder="No. of Months" required />
+        </div>
+      </div>
+
+      <button (click)="sregister()">Submit</button>
+    </form>
+    <p>
+      Don't have Membership?
+      <a class="mem" (click)="navigatetoGetMembership()">Get it here</a>
+    </p>
+  </section>
+</body>

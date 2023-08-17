@@ -1,0 +1,65 @@
+<body>
+    
+
+<section class="container">
+    <header>Registration Form</header>
+    <form action="#" class="form">
+      <div class="input-box">
+        <label>Full Name</label>
+        <input type="text" [(ngModel)]="name" [ngModelOptions]="{standalone: true}" placeholder="Enter full name" required />
+      </div>
+      <div class="input-box">
+        <label>Email Address</label>
+        <input type="text" [(ngModel)]="email" [ngModelOptions]="{standalone: true}"placeholder="Enter email address" required />
+      </div>
+      <div class="column">
+        <div class="input-box">
+          <label>Phone Number</label>
+          <input type="text" [(ngModel)]="phone" [ngModelOptions]="{standalone: true}" placeholder="Enter phone number" required />
+        </div>
+        <div class="input-box">
+          <label>Birth Date</label>
+          <input type="date" [(ngModel)]="birthdate" [ngModelOptions]="{standalone: true}" placeholder="Enter birth date" required />
+        </div>
+      </div>
+      <div class="column">
+        <div class="gender-box">
+            <h3>Gender</h3>
+            <div class="gender-option">
+              <div class="gender">
+                <input type="radio" [(ngModel)]="gender" value="male" id="check-male" name="gender" />
+                <label for="check-male">male</label>
+              </div>
+              <div class="gender">
+                <input type="radio" [(ngModel)]="gender" value="female"  id="check-female" name="gender"/>
+                <label for="check-female">Female</label>
+              </div>
+             
+            </div>
+        </div>
+        <div class="gender-box">
+          <label for="check-med" class="med">Do you have any medical problem?</label>
+          <div class="gender-option">
+          <div class="gender">
+            <input type="radio" [(ngModel)]="problem"  value="Yes" id="check-Yes" name="problem" />
+            <label for="check-Yes">Yes</label>
+          </div>
+          <div class="gender">
+            <input type="radio"  [(ngModel)]="problem" value="No"   id="check-No" name="problem"/>
+            <label for="check-No">No</label>
+          </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="problem">
+        <h3>If Yes, then please tell us about it!!</h3>
+        <textarea [(ngModel)]="prob_details" [ngModelOptions]="{standalone: true}" id="txt" cols="80" rows="5"></textarea>
+      </div>
+      
+      <button type="submit" (click)="register()">Submit</button>
+    </form>
+  </section>
+
+</body>

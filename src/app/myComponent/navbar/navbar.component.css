@@ -1,0 +1,26 @@
+p {
+    font-family: Lato;
+}
+a{
+    color:white !important;
+    font-size: 200x !important;
+}
+span{
+    background-color:white ;
+
+}
+
+img{
+    width: 60px;
+    height: 60px;
+}
+.log{
+    margin-right: 20px;
+}
+
+.dropdown-menu{
+    background-color:black;
+}
+.dropdown-menu hr{
+    background-color:white;
+}

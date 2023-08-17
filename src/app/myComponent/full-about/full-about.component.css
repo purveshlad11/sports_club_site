@@ -1,0 +1,29 @@
+.info{
+    display:flex;
+    
+}
+
+
+img{
+    width:250px;
+    height:400px;
+    margin:auto;
+}
+
+.img1{
+    
+    padding-top: 50px;
+}
+
+.img2{
+    
+    padding-bottom: 50px;
+}
+#about{
+    margin: auto;
+
+    margin-top:5vh;
+    margin-bottom:5vh;
+    
+    
+}

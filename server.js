@@ -4,11 +4,13 @@ const mongoose = require('mongoose');
 mongoose.set('strictQuery', false);
 var routes = require('./route/routes');
 const cors = require('cors');
+
 app.use(cors(
   {
     origin: "http://localhost:4200"
   }
 ));
+const PORT= process.env.PORT || 8086;
 
 const mongoURI = 'mongodb://127.0.0.1:27017/lsc';
 
@@ -31,7 +33,7 @@ connectToDatabase();
 app.use(express.json());
 app.use(routes);
  
-app.listen(8086,function check(err)
+app.listen(PORT,function check(err)
 {
     if(err)
     console.log("error")
